@@ -11,5 +11,9 @@ int main()
     printf("s2=%s\n", s2);
     printf("s3=%s\n", s3);
     printf("s4=%s\n", s4);
+    
+    char s5[30];
+    gets(s5);//scanf er poriborte ata use korte hoy...karon scanf space jukto string input nite pare na
+    printf("s5=%s\n",s5);
 
 }
