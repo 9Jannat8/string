@@ -36,5 +36,21 @@ int main()
     }
 
     printf("%d\n", cou);
+    
+    //another way
+    int fre=0, t, h, e, spc;
+    for(i=0; i<=sl-3; i++){
+            t=(string[i]=='t' || string[i]=='T');
+            h=(string[i+1]=='h' || string[i+1]=='H');
+            e=(string[i+2]=='e' || string[i+2]=='E');
+            spc=(string[i+3]==' ' || string[i+3]=='\0');
+        if((t&&h&&e&&spc)==1){
+            fre++;
+            i+=4;
+        }
+    }
+
+    printf("%d\n", fre);
+    
     return 0;
 }
